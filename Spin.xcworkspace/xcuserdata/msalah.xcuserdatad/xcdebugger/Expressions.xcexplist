@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MyCornerVC.handleServerData() -&gt; ():MyCornerVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myCornerStateCtrl.myCornerData.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static LoginStateController.saveUserDefaults() -&gt; ():LoginStateController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "LoginStateController.userData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StayUpdatedViewController.(viewDidLoad() -&gt; ()).(closure #1):StayUpdatedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.stateController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TipsTableHandler.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:TipsTableHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "stateController">
+            </PersistentString>
+            <PersistentString
+               value = "stateController.myCornerData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EventsStateController.(getEvents(completion : (String!) -&gt; ()) -&gt; ()).(closure #1):EventsStateController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoginStateController.setUserDataFromStorage() -&gt; ():LoginStateController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "LoginStateController.userData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EventsStateController.isEventDate(date : Date) -&gt; Bool:EventsStateController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Calendar.current.timeZone">
+            </PersistentString>
+            <PersistentString
+               value = "event.eventDate!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SignupViewController.didFinishSelection(selectedItems : [DropdownItem]) -&gt; ():SignupViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

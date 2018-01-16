@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa Bold.otf">
+            <string>NexaBold</string>
+        </array>
+        <array key="Nexa Light.otf">
+            <string>NexaLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ABLAlertViewController" customModule="Spin" customModuleProvider="target">
+            <connections>
+                <outlet property="alertMaskBackground" destination="Ga6-8X-L4h" id="nh1-fq-dgs"/>
+                <outlet property="alertView" destination="8rx-lS-X8R" id="fhM-Ne-wx3"/>
+                <outlet property="labelABLResult" destination="LhB-n4-p7c" id="mi7-76-ck8"/>
+                <outlet property="labelEBVResult" destination="NWE-9e-bex" id="URS-UN-uun"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NlT-wO-Sbx">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ga6-8X-L4h">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rx-lS-X8R">
+                    <rect key="frame" x="24" y="84" width="272" height="400"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNy-SG-4mM">
+                            <rect key="frame" x="0.0" y="0.0" width="272" height="43"/>
+                            <color key="backgroundColor" red="0.22352941179999999" green="0.32156862749999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="5Jl-8g-e8D"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0r-u9-5XC">
+                            <rect key="frame" x="226" y="0.0" width="46" height="43"/>
+                            <color key="backgroundColor" red="0.22352941179999999" green="0.32156862749999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="3Ve-bd-Lat"/>
+                                <constraint firstAttribute="height" constant="43" id="jdH-iW-oBw"/>
+                            </constraints>
+                            <state key="normal" title="X">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCloseClicked:" destination="-1" eventType="touchUpInside" id="T2B-eR-LZr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated blood volume (EBV) is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jp-l8-RYA">
+                            <rect key="frame" x="8" y="65" width="256" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="OPn-gn-Rka"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOc-yD-c87">
+                            <rect key="frame" x="22" y="94" width="228" height="56"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3259 mL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWE-9e-bex">
+                                    <rect key="frame" x="8" y="8" width="212" height="40"/>
+                                    <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="29"/>
+                                    <color key="textColor" red="0.22352941179999999" green="0.32156862749999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="NWE-9e-bex" secondAttribute="bottom" constant="8" id="59I-zZ-npY"/>
+                                <constraint firstAttribute="trailing" secondItem="NWE-9e-bex" secondAttribute="trailing" constant="8" id="8G7-bM-5Wg"/>
+                                <constraint firstItem="NWE-9e-bex" firstAttribute="top" secondItem="iOc-yD-c87" secondAttribute="top" constant="8" id="XTp-q1-dTn"/>
+                                <constraint firstItem="NWE-9e-bex" firstAttribute="leading" secondItem="iOc-yD-c87" secondAttribute="leading" constant="8" id="hWC-za-HmK"/>
+                                <constraint firstAttribute="height" constant="56" id="nZD-TZ-jfM"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cx-7j-zQJ">
+                            <rect key="frame" x="16" y="186" width="240" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="IeL-i6-spH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated allowable blood loss (ABL) is" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0C1-yo-wwt">
+                            <rect key="frame" x="8" y="195" width="256" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="9lW-OV-ZjK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1h-LF-SAw">
+                            <rect key="frame" x="22" y="241" width="228" height="56"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3259 mL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhB-n4-p7c">
+                                    <rect key="frame" x="8" y="19" width="212" height="29"/>
+                                    <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="29"/>
+                                    <color key="textColor" red="0.22352941179999999" green="0.32156862749999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="LhB-n4-p7c" firstAttribute="leading" secondItem="m1h-LF-SAw" secondAttribute="leading" constant="8" id="5dZ-lF-jHJ"/>
+                                <constraint firstAttribute="bottom" secondItem="LhB-n4-p7c" secondAttribute="bottom" constant="8" id="8dx-Tb-gPD"/>
+                                <constraint firstAttribute="trailing" secondItem="LhB-n4-p7c" secondAttribute="trailing" constant="8" id="SiS-LR-2Ap"/>
+                                <constraint firstAttribute="height" constant="56" id="bR0-55-a0D"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This is maximum allowable blood loss that marks the amount after which hemorrhage complications start occurring." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epq-9Z-evR">
+                            <rect key="frame" x="8" y="324" width="256" height="68"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="68" id="BDL-Hu-9Ah"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="9cx-7j-zQJ" firstAttribute="leading" secondItem="8rx-lS-X8R" secondAttribute="leading" constant="16" id="ANb-YJ-zB7"/>
+                        <constraint firstItem="gNy-SG-4mM" firstAttribute="top" secondItem="8rx-lS-X8R" secondAttribute="top" id="CVx-fx-vgI"/>
+                        <constraint firstAttribute="height" constant="400" id="Dlb-kq-xY0"/>
+                        <constraint firstAttribute="bottom" secondItem="epq-9Z-evR" secondAttribute="bottom" constant="8" id="GEF-47-Fed"/>
+                        <constraint firstAttribute="trailing" secondItem="0C1-yo-wwt" secondAttribute="trailing" constant="8" id="ICV-Yq-Dgy"/>
+                        <constraint firstItem="m1h-LF-SAw" firstAttribute="leading" secondItem="8rx-lS-X8R" secondAttribute="leading" constant="22" id="NHG-Ba-SKg"/>
+                        <constraint firstItem="0C1-yo-wwt" firstAttribute="leading" secondItem="8rx-lS-X8R" secondAttribute="leading" constant="8" id="OOY-Fl-HQL"/>
+                        <constraint firstItem="i0r-u9-5XC" firstAttribute="top" secondItem="8rx-lS-X8R" secondAttribute="top" id="Oa4-3s-t9n"/>
+                        <constraint firstItem="iOc-yD-c87" firstAttribute="leading" secondItem="8rx-lS-X8R" secondAttribute="leading" constant="22" id="SzB-le-l04"/>
+                        <constraint firstAttribute="trailing" secondItem="gNy-SG-4mM" secondAttribute="trailing" id="TfE-hG-zjt"/>
+                        <constraint firstAttribute="trailing" secondItem="i0r-u9-5XC" secondAttribute="trailing" id="Wvh-h7-OcO"/>
+                        <constraint firstItem="m1h-LF-SAw" firstAttribute="top" secondItem="0C1-yo-wwt" secondAttribute="bottom" constant="8" id="YWw-lM-DL9"/>
+                        <constraint firstAttribute="trailing" secondItem="1jp-l8-RYA" secondAttribute="trailing" constant="8" id="eOI-Oh-Bdm"/>
+                        <constraint firstAttribute="trailing" secondItem="9cx-7j-zQJ" secondAttribute="trailing" constant="16" id="hDS-9g-85x"/>
+                        <constraint firstItem="iOc-yD-c87" firstAttribute="centerX" secondItem="8rx-lS-X8R" secondAttribute="centerX" id="hiV-iF-Vgf"/>
+                        <constraint firstItem="0C1-yo-wwt" firstAttribute="top" secondItem="9cx-7j-zQJ" secondAttribute="bottom" constant="8" id="ntE-Ag-9gQ"/>
+                        <constraint firstItem="9cx-7j-zQJ" firstAttribute="top" secondItem="iOc-yD-c87" secondAttribute="bottom" constant="36" id="qLU-K2-ohD"/>
+                        <constraint firstItem="1jp-l8-RYA" firstAttribute="leading" secondItem="8rx-lS-X8R" secondAttribute="leading" constant="8" id="qma-es-2Wh"/>
+                        <constraint firstAttribute="trailing" secondItem="iOc-yD-c87" secondAttribute="trailing" constant="22" id="s0b-Ya-v5A"/>
+                        <constraint firstAttribute="trailing" secondItem="m1h-LF-SAw" secondAttribute="trailing" constant="22" id="uP0-W3-RES"/>
+                        <constraint firstAttribute="trailing" secondItem="epq-9Z-evR" secondAttribute="trailing" constant="8" id="wLf-Yl-o3Z"/>
+                        <constraint firstItem="gNy-SG-4mM" firstAttribute="leading" secondItem="8rx-lS-X8R" secondAttribute="leading" id="whP-07-ahS"/>
+                        <constraint firstItem="1jp-l8-RYA" firstAttribute="top" secondItem="i0r-u9-5XC" secondAttribute="bottom" constant="22" id="wmH-7B-1dN"/>
+                        <constraint firstItem="m1h-LF-SAw" firstAttribute="centerX" secondItem="8rx-lS-X8R" secondAttribute="centerX" id="xEe-N3-beK"/>
+                        <constraint firstItem="iOc-yD-c87" firstAttribute="top" secondItem="1jp-l8-RYA" secondAttribute="bottom" constant="8" id="y0Q-JR-a2y"/>
+                        <constraint firstItem="epq-9Z-evR" firstAttribute="leading" secondItem="8rx-lS-X8R" secondAttribute="leading" constant="8" id="yky-2U-Tam"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8rx-lS-X8R" firstAttribute="centerX" secondItem="NlT-wO-Sbx" secondAttribute="centerX" id="0Ml-S3-6R9"/>
+                <constraint firstAttribute="bottom" secondItem="Ga6-8X-L4h" secondAttribute="bottom" id="5W2-gJ-RsM"/>
+                <constraint firstItem="Ga6-8X-L4h" firstAttribute="top" secondItem="NlT-wO-Sbx" secondAttribute="top" id="KdW-0W-3iu"/>
+                <constraint firstItem="8rx-lS-X8R" firstAttribute="centerY" secondItem="NlT-wO-Sbx" secondAttribute="centerY" id="L81-Zc-Cf5"/>
+                <constraint firstItem="Ga6-8X-L4h" firstAttribute="leading" secondItem="NlT-wO-Sbx" secondAttribute="leading" id="PKd-ux-YC7"/>
+                <constraint firstAttribute="trailing" secondItem="Ga6-8X-L4h" secondAttribute="trailing" id="fzA-Go-woD"/>
+                <constraint firstItem="8rx-lS-X8R" firstAttribute="leading" secondItem="NlT-wO-Sbx" secondAttribute="leading" constant="24" id="ghy-eD-5S0"/>
+                <constraint firstAttribute="trailing" secondItem="8rx-lS-X8R" secondAttribute="trailing" constant="24" id="m7M-hn-apH"/>
+            </constraints>
+            <point key="canvasLocation" x="25" y="-682"/>
+        </view>
+    </objects>
+</document>
