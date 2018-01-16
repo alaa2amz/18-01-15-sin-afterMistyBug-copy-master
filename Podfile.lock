@@ -1,0 +1,33 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (4.6.0)
+  - DZNWebViewController (3.2)
+  - ExpandableCell (1.2.1)
+  - IQKeyboardManagerSwift (5.0.7)
+  - JTAppleCalendar (6.1.6)
+  - SideMenu (3.1.5)
+  - SwiftMessages (4.1.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire (~> 4.0)
+  - DZNWebViewController
+  - ExpandableCell (~> 1.2.1)
+  - IQKeyboardManagerSwift (~> 5.0)
+  - JTAppleCalendar (~> 6.0)
+  - SideMenu
+  - SwiftMessages
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DZNWebViewController: 8e927a5de637fe0c4104c001d5cccd4fa5621e50
+  ExpandableCell: 283526533c2c197a2457bdd98706290d03903ae1
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  JTAppleCalendar: 560fb46421880f53ad54123295072de24bca2b18
+  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
+  SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
+
+PODFILE CHECKSUM: 1316f3ef1347db227c39a9063029a9ace47716e5
+
+COCOAPODS: 1.2.1
